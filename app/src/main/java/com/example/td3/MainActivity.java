@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.view.Window;
 import android.widget.Toast;
 
 import com.google.gson.Gson;
@@ -30,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
     private SharedPreferences sharedPreferences;
     private Gson gson;
 
-    private static final String BASE_URL = "https://pokeapi.co";
+    private static final String BASE_URL = "https://raw.githubusercontent.com/Francois-Xavier-3A/Cards/master/";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
