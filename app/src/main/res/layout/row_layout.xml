@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="?android:attr/listPreferredItemHeight"
-    android:padding="6dip" >
+    android:padding="6dip"
+    android:id="@+id/parent_layout">
 
     <ImageView
         android:id="@+id/icon"
@@ -14,61 +15,6 @@
         android:layout_marginRight="6dip"
         android:contentDescription="TODO"
         android:src="@mipmap/picture" />
-
-    <TextView
-        android:id="@+id/seventhLine"
-        android:layout_width="fill_parent"
-        android:layout_height="26dip"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_toRightOf="@id/icon"
-        android:ellipsize="marquee"
-        android:textSize="12sp"
-        android:singleLine="true" />
-
-    <TextView
-        android:id="@+id/sixthLine"
-        android:layout_width="fill_parent"
-        android:layout_height="26dip"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_toRightOf="@id/icon"
-        android:ellipsize="marquee"
-        android:textSize="12sp"
-        android:singleLine="true" />
-
-    <TextView
-        android:id="@+id/fithLine"
-        android:layout_width="fill_parent"
-        android:layout_height="26dip"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_toRightOf="@id/icon"
-        android:ellipsize="marquee"
-        android:textSize="12sp"
-        android:singleLine="true" />
-
-    <TextView
-        android:id="@+id/fourthLine"
-        android:layout_width="fill_parent"
-        android:layout_height="26dip"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_toRightOf="@id/icon"
-        android:ellipsize="marquee"
-        android:textSize="12sp"
-        android:singleLine="true" />
-
-    <TextView
-        android:id="@+id/thirdLine"
-        android:layout_width="fill_parent"
-        android:layout_height="26dip"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_toRightOf="@id/icon"
-        android:ellipsize="marquee"
-        android:textSize="12sp"
-        android:singleLine="true" />
 
     <TextView
         android:id="@+id/secondLine"
