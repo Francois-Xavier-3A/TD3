@@ -54,22 +54,22 @@ public class Info extends AppCompatActivity {
         name.setText(textName);
 
         TextView name2 = findViewById(R.id.tv2);
-        name2.setText(textRarity);
+        name2.setText("Level: " +textRarity);
 
         TextView name3 = findViewById(R.id.tv3);
-        name3.setText(textCiv);
+        name3.setText("Civilization: " +textCiv);
 
         TextView name4 = findViewById(R.id.tv4);
-        name4.setText(textType);
+        name4.setText("Type: " +textType);
 
         TextView name5 = findViewById(R.id.tv5);
-        name5.setText(textRace);
+        name5.setText("Race: " +textRace);
 
         TextView name6 = findViewById(R.id.tv6);
-        name6.setText(textPower);
+        name6.setText("Power: " +textPower);
 
         TextView name7 = findViewById(R.id.tv7);
-        name7.setText(textID);
+        name7.setText("Number: " +textID);
 
         TextView name8 = findViewById(R.id.tv8);
         name8.setText(textText);
