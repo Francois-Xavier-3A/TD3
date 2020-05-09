@@ -82,5 +82,4 @@ public class Info extends AppCompatActivity {
         //image.setImageResource(Integer.parseInt(Picture));
 
     }
-
 }

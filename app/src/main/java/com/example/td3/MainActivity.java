@@ -41,28 +41,28 @@ public class MainActivity extends AppCompatActivity {
         gson = new GsonBuilder()
                 .setLenient()
                 .create();
-        List<Pokemon> pokemonList = getDataFromCache();
+        List<Monster> monsterList = getDataFromCache();
 
-        if(pokemonList != null){
-            showList(pokemonList);
+        if(monsterList != null){
+            showList(monsterList);
         } else {
             makeApicall();
         }
     }
 
-    private List<Pokemon> getDataFromCache() {
-        String jsonPokemon = sharedPreferences.getString(Constante.KEY_POKEMON_List, null);
+    private List<Monster> getDataFromCache() {
+        String jsonMonster = sharedPreferences.getString(Constante.KEY_MONSTER_List, null);
 
-        if(jsonPokemon == null) {
+        if(jsonMonster == null) {
             return null;
         } else
         {
-            Type listType = new TypeToken<List<Pokemon>>(){}.getType();
-            return gson.fromJson(jsonPokemon, listType);
+            Type listType = new TypeToken<List<Monster>>(){}.getType();
+            return gson.fromJson(jsonMonster, listType);
         }
     }
 
-    private void showList(List<Pokemon> pokemonList) {
+    private void showList(List<Monster> monsterList) {
         recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
         recyclerView.setHasFixedSize(true);
         // use a linear layout manager
@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(layoutManager);
 
         // define an adapter
-        mAdapter = new ListAdapter(pokemonList, this);
+        mAdapter = new ListAdapter(monsterList, this);
         recyclerView.setAdapter(mAdapter);
     }
 
@@ -82,35 +82,35 @@ public class MainActivity extends AppCompatActivity {
                 .addConverterFactory(GsonConverterFactory.create(gson))
                 .build();
 
-        PokeAPI pokeAPI = retrofit.create(PokeAPI.class);
+        DuelMastersAPI duelMastersAPI = retrofit.create(DuelMastersAPI.class);
 
-        Call<RestPokemonResponse> call = pokeAPI.getPokemonResponce();
-         call.enqueue(new Callback<RestPokemonResponse>() {
+        Call<RestMonsterResponse> call = duelMastersAPI.getMonsterResponce();
+         call.enqueue(new Callback<RestMonsterResponse>() {
              @Override
-             public void onResponse(Call<RestPokemonResponse> call, Response<RestPokemonResponse> response) {
+             public void onResponse(Call<RestMonsterResponse> call, Response<RestMonsterResponse> response) {
                 if(response.isSuccessful() && response.body() != null){
-                    List<Pokemon> pokemonList = response.body().getResults();
-                    saveList(pokemonList);
-                    showList(pokemonList);
+                    List<Monster> monsterList = response.body().getResults();
+                    saveList(monsterList);
+                    showList(monsterList);
                 } else {
                     showError();
                 }
              }
 
              @Override
-             public void onFailure(Call<RestPokemonResponse> call, Throwable t) {
+             public void onFailure(Call<RestMonsterResponse> call, Throwable t) {
                 showError();
              }
 
          });
     }
 
-    private void saveList(List<Pokemon> pokemonList) {
-        String jsonString = gson.toJson(pokemonList);
+    private void saveList(List<Monster> monsterList) {
+        String jsonString = gson.toJson(monsterList);
 
         sharedPreferences
                 .edit()
-                .putString(Constante.KEY_POKEMON_List, jsonString)
+                .putString(Constante.KEY_MONSTER_List, jsonString)
                 .apply();
 
         Toast.makeText(getApplicationContext(), "List saved", Toast.LENGTH_SHORT).show();

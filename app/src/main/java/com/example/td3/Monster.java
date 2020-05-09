@@ -1,6 +1,6 @@
 package com.example.td3;
 
-public class Pokemon {
+public class Monster {
     private String name;
     private String url;
     private String set;

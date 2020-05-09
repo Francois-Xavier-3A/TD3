@@ -2,10 +2,10 @@ package com.example.td3;
 
 import java.util.List;
 
-public class RestPokemonResponse {
+public class RestMonsterResponse {
     private Integer count;
     private String next;
-    private List<Pokemon> results;
+    private List<Monster> results;
 
     public Integer getCount() {
         return count;
@@ -15,7 +15,7 @@ public class RestPokemonResponse {
         return next;
     }
 
-    public List<Pokemon> getResults() {
+    public List<Monster> getResults() {
         return results;
     }
 }
