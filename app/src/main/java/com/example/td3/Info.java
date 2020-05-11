@@ -69,30 +69,30 @@ public class Info extends AppCompatActivity {
     }
 
     private void getIncomingIntent() {
-        Log.d(TAG, "getIncommingIntent: checking for incomming intents.");
+            Log.d(TAG, "getIncommingIntent: checking for incomming intents.");
 
-        if (getIntent().hasExtra("rarity") && getIntent().hasExtra("name") && getIntent().hasExtra("text") &&
-                getIntent().hasExtra("race") && getIntent().hasExtra("picture") && getIntent().hasExtra("civilization")
-                && getIntent().hasExtra("type") && getIntent().hasExtra("id") && getIntent().hasExtra("cost") && getIntent().hasExtra("illustrator")
-                && getIntent().hasExtra("set") && getIntent().hasExtra("cost")){
+            if (getIntent().hasExtra("rarity") && getIntent().hasExtra("name") && getIntent().hasExtra("text") &&
+                    getIntent().hasExtra("race") && getIntent().hasExtra("picture") && getIntent().hasExtra("civilization")
+                    && getIntent().hasExtra("type") && getIntent().hasExtra("id") && getIntent().hasExtra("cost") && getIntent().hasExtra("illustrator")
+                    && getIntent().hasExtra("set") && getIntent().hasExtra("cost")){
 
-            Log.d(TAG, "getIncomingIntent: found intent extras");
-            {
-                String textName = getIntent().getStringExtra("name");
-                String textID = getIntent().getStringExtra("id");
-                String textCiv = getIntent().getStringExtra("civilization");
-                String textRarity = getIntent().getStringExtra("rarity");
-                String textType = getIntent().getStringExtra("type");
-                String textText = getIntent().getStringExtra("text");
-                String textRace = getIntent().getStringExtra("race");
-                String textPower = getIntent().getStringExtra("power");
-                String Picture = getIntent().getStringExtra("picture");
-                String textIllustrator = getIntent().getStringExtra("illustrator");
-                String textSet = getIntent().getStringExtra("set");
-                String textCost = getIntent().getStringExtra("cost");
+                Log.d(TAG, "getIncomingIntent: found intent extras");
+                {
+                    String textName = getIntent().getStringExtra("name");
+                    String textID = getIntent().getStringExtra("id");
+                    String textCiv = getIntent().getStringExtra("civilization");
+                    String textRarity = getIntent().getStringExtra("rarity");
+                    String textType = getIntent().getStringExtra("type");
+                    String textText = getIntent().getStringExtra("text");
+                    String textRace = getIntent().getStringExtra("race");
+                    String textPower = getIntent().getStringExtra("power");
+                    String Picture = getIntent().getStringExtra("picture");
+                    String textIllustrator = getIntent().getStringExtra("illustrator");
+                    String textSet = getIntent().getStringExtra("set");
+                    String textCost = getIntent().getStringExtra("cost");
 
-                set(textRarity, textName, textText, textRace, Picture, textCiv, textType, textID, textPower, textIllustrator, textSet, textCost);
+                    set(textRarity, textName, textText, textRace, Picture, textCiv, textType, textID, textPower, textIllustrator, textSet, textCost);
+                }
             }
-        }
     }
 }
