@@ -23,7 +23,7 @@ Cette application affiche la liste des cartes du jeu DuelMasters et utilise l'AP
 
 <img src="/dossierimage/Screenshot_20200511-214249.png" width="200" height="400"/>
 
-#### Ecran du détail du monstre:
+##### Ecran du détail du monstre:
 
  - Affiche les différentes informations du monstre
  - Futur bouton pour indiquer la possession de la carte par l'utilisateur
