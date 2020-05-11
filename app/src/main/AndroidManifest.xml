@@ -6,9 +6,9 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/picture_icon"
+        android:icon="@mipmap/iconduel"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/picture_icon"
+        android:roundIcon="@mipmap/iconduel"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".Accueil">

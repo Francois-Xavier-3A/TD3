@@ -14,7 +14,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginRight="6dip"
         android:contentDescription="TODO"
-        android:src="@mipmap/picture" />
+        android:src="@mipmap/special" />
 
     <TextView
         android:id="@+id/secondLine"
