@@ -37,81 +37,86 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.122" />
 
+
     <TextView
         android:id="@+id/tv3"
-        android:layout_width="180dp"
-        android:layout_height="25dp"
-        android:layout_marginTop="120dp"
-        android:layout_marginEnd="4dp"
-        android:layout_marginRight="4dp"
+        android:layout_width="187dp"
+        android:layout_height="33dp"
         android:fontFamily="@font/aldrich"
         android:text="Rareté1"
         android:textColor="#FFF"
-        android:textSize="18sp"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.2" />
 
     <TextView
         android:id="@+id/tv4"
-        android:layout_width="180dp"
-        android:layout_height="25dp"
-        android:layout_marginTop="156dp"
-        android:layout_marginEnd="4dp"
-        android:layout_marginRight="4dp"
+        android:layout_width="187dp"
+        android:layout_height="33dp"
         android:fontFamily="@font/aldrich"
         android:text="Rareté2"
         android:textColor="#FFF"
-        android:textSize="18sp"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.265" />
 
     <TextView
         android:id="@+id/tv5"
-        android:layout_width="180dp"
-        android:layout_height="25dp"
-        android:layout_marginTop="196dp"
-        android:layout_marginEnd="4dp"
-        android:layout_marginRight="4dp"
+        android:layout_width="176dp"
+        android:layout_height="38dp"
         android:fontFamily="@font/aldrich"
         android:text="Rareté3"
         android:textColor="#FFF"
-        android:textSize="18sp"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintHorizontal_bias="0.953"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.33" />
 
     <TextView
         android:id="@+id/tv6"
         android:layout_width="180dp"
         android:layout_height="25dp"
-        android:layout_marginTop="236dp"
-        android:layout_marginEnd="4dp"
-        android:layout_marginRight="4dp"
         android:fontFamily="@font/aldrich"
         android:text="Rareté4"
         android:textColor="#FFF"
-        android:textSize="18sp"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintHorizontal_bias="0.969"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.395" />
 
     <TextView
         android:id="@+id/tv7"
         android:layout_width="180dp"
         android:layout_height="25dp"
-        android:layout_marginTop="276dp"
-        android:layout_marginEnd="4dp"
-        android:layout_marginRight="4dp"
         android:fontFamily="@font/aldrich"
         android:text="Rareté5"
         android:textColor="#FFF"
-        android:textSize="18sp"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
+        app:layout_constraintHorizontal_bias="0.969"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.46" />
 
     <TextView
         android:id="@+id/tv8"
-        android:layout_width="304dp"
-        android:layout_height="182dp"
+        android:layout_width="297dp"
+        android:layout_height="132dp"
         android:fontFamily="@font/aldrich"
         android:text="Bonjour"
         android:textColor="#FFF"
@@ -121,7 +126,52 @@
         app:layout_constraintHorizontal_bias="0.644"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.966" />
+        app:layout_constraintVertical_bias="0.912" />
+
+    <TextView
+        android:id="@+id/tv9"
+        android:layout_width="221dp"
+        android:layout_height="16dp"
+        android:fontFamily="@font/aldrich"
+        android:text="Illustrator"
+        android:textColor="#FFF"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.993" />
+
+    <TextView
+        android:id="@+id/tv10"
+        android:layout_width="100dp"
+        android:layout_height="16dp"
+        android:fontFamily="@font/aldrich"
+        android:text="Version"
+        android:textColor="#FFF"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.993" />
+
+    <TextView
+        android:id="@+id/tv11"
+        android:layout_width="180dp"
+        android:layout_height="25dp"
+        android:fontFamily="@font/aldrich"
+        android:text="Cost"
+        android:textColor="#FFF"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.969"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.525" />
 
     <ImageView
         android:id="@+id/image"
@@ -141,15 +191,15 @@
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/aldrich"
         android:text="In possesion"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.782"
+        app:layout_constraintHorizontal_bias="0.858"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.585"
+        app:layout_constraintVertical_bias="0.633"
         tools:ignore="MissingConstraints" />
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
